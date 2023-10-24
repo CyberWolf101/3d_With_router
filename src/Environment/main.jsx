@@ -5,21 +5,24 @@ import { Loader } from "@react-three/drei"
 import Sidepage from "./libs/Sidepage"
 import { userStore } from "./store/store"
 
- function ExperiencePage() {
-  <div>
-    <Canvas
-      camera={{
-        fov: 45,
-        near: 0.1,
-        far: 100,
-        position: [0, 0, 1],
-      }}
-    >
-      <Experience />
-    </Canvas>
-    {/* page sidebar */}
-    <Sidepage />
-    <Loader />
-  </div>
+function ExperiencePage() {
+  return (
+    <>
+      <Canvas
+        className="experience_canvas"
+        camera={{
+          fov: 45,
+          near: 0.1,
+          far: 100,
+          position: [0, 0, 1],
+        }}
+      >
+        <Experience />
+      </Canvas>
+      {/* page sidebar */}
+      <Sidepage />
+      <Loader />
+    </>
+  )
 }
 export default ExperiencePage

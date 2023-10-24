@@ -9,6 +9,7 @@ const Tags = (props) => {
     <>
       <div
         className="tag-div"
+        style={{background:'white', padding:'1px'}}
         onMouseEnter={() => setShowChair(true)}
         onMouseLeave={() => setShowChair(false)}
         onClick={() => setShowChair(true)}

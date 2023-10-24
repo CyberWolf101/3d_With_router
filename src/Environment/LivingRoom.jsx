@@ -2,10 +2,9 @@ import React from "react"
 import { useGLTF } from "@react-three/drei"
 import Point from "./libs/Point"
 import Tags from "./libs/Tags"
-import environment from '../Assets/Living_room.glb'
+// import environment from "../Assets/Living_room.glb"
 export function Model(props) {
-
-  const { nodes, materials } = useGLTF(environment)
+  const { nodes } = useGLTF("/Living_room.glb")
 
   return (
     <group {...props} dispose={null}>
@@ -19,9 +18,7 @@ export function Model(props) {
         <Tags value={2} />
       </Point>
 
-
       <Point position={[1.5, -0.3, -2.8]} rotation={[0, -Math.PI / 4, 0]}>
-
         <Tags value={2} />
       </Point>
 
@@ -32,4 +29,4 @@ export function Model(props) {
   )
 }
 
-useGLTF.preload(environment)
+useGLTF.preload("/Living_room.glb")

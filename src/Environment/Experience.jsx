@@ -15,6 +15,7 @@ const Experience = () => {
       {/* perfomance monitor */}
       {/* <Perf position="top-left" /> */}
       {/* controls */}
+      <color attach="background" args={["black"]} />
       <OrbitControls
         makeDefault
         keyPanSpeed={0}
@@ -30,8 +31,8 @@ const Experience = () => {
           <Model />
         </Center>
       </Suspense>
-      //* This part is used in know the direction of model in the DOM //
-      //!comment this part out on production so users dont see it //
+      {/* * This part is used in know the direction of model in the DOM  */}
+      {/* !comment this part out on production so users dont see it */}
       <GizmoHelper alignment="bottom-right" margin={[80, 80]}>
         <GizmoViewport />
       </GizmoHelper>
