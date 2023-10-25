@@ -4,6 +4,7 @@ import Experience from "./Experience"
 import { Loader } from "@react-three/drei"
 import Sidepage from "./libs/Sidepage"
 import { userStore } from "./store/store"
+import './environment.css'
 
 function ExperiencePage() {
   return (

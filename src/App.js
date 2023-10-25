@@ -12,13 +12,16 @@ import ExperiencePage from './Environment/main'
 
 // layouts
 import RootLayout from './layouts/RootLayout'
+import MainLayout from './layouts/MainLayout'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
-      <Route index element={<Home />} />
-      <Route path='experience' element={<ExperiencePage />} />
-      <Route path="*" element={<NotFound />} />
+    <Route path="/" element={<MainLayout />}>
+      <Route path="/" element={<RootLayout />}>
+        <Route index element={<Home />} />
+        <Route path='experience' element={<ExperiencePage />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
     </Route>
   )
 )

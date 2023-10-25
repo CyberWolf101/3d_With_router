@@ -8,7 +8,7 @@ const Tag = (prop) => {
     <div className="each-tag">
       <div>
        <small> {prop.value}</small>
-        <button className="button" onClick={() => setOpen()}>
+        <button className="button" onClick={() => {setOpen(); console.log('clicked')}}>
           Add to Cart
         </button>
       </div>

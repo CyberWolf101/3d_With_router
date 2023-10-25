@@ -9,7 +9,7 @@ const Tags = (props) => {
     <>
       <div
         className="tag-div"
-        style={{background:'white', padding:'1px'}}
+        style={{background:'white'}}
         onMouseEnter={() => setShowChair(true)}
         onMouseLeave={() => setShowChair(false)}
         onClick={() => setShowChair(true)}
@@ -21,6 +21,7 @@ const Tags = (props) => {
             visibility: showChair ? "visible" : "hidden",
           }}
         >
+       
           <Tag value={props.value} />
         </div>
       </div>

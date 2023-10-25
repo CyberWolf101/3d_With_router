@@ -8,10 +8,11 @@ export default function RootLayout() {
       <header>
         <nav>
           <h1>Jobarouter</h1>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="about">About</NavLink>
-          <NavLink to="help">Help</NavLink>
-          <NavLink to="careers">Careers</NavLink>
+          <br />
+          <NavLink to="/" style={{color:'white'}}>Home</NavLink>
+          <NavLink to="/experience" style={{color:'white'}}>Experience</NavLink>
+          <NavLink to="help" style={{color:'white'}}>Help</NavLink>
+          <NavLink to="careers" style={{color:'white'}}>Careers</NavLink>
         </nav>
         <Breadcrumbs />
       </header>

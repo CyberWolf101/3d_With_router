@@ -16,10 +16,10 @@ const Sidepage = () => {
         <button className="close" onClick={() => setClose()}>
           close
         </button>
-<br />
-<br />
-<br />
-        <div>
+        <br />
+        <br />
+        <br />
+        <div style={{zIndex:100}}>
           HERE THERE WILL BE AN EXPORT BUTTON TO TAKE IT TO THE MAIN CART.
           YOU CAN HANDLE THE ITEMS BEING PUT IN CART WITH A CONTEXT
         </div>
